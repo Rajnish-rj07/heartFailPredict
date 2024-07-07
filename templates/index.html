@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Failure Prediction</title>
+</head>
+<body>
+    <h1>Heart Failure Prediction</h1>
+    <form action="/predict" method="post">
+        <label for="age">Age:</label>
+        <input type="number" name="age" id="age" required><br><br>
+        <label for="anaemia">Anaemia (0 or 1):</label>
+        <input type="number" name="anaemia" id="anaemia" required><br><br>
+        <label for="creatinine_phosphokinase">Creatinine Phosphokinase:</label>
+        <input type="number" name="creatinine_phosphokinase" id="creatinine_phosphokinase" required><br><br>
+        <label for="diabetes">Diabetes (0 or 1):</label>
+        <input type="number" name="diabetes" id="diabetes" required><br><br>
+        <label for="ejection_fraction">Ejection Fraction:</label>
+        <input type="number" name="ejection_fraction" id="ejection_fraction" required><br><br>
+        <label for="high_blood_pressure">High Blood Pressure (0 or 1):</label>
+        <input type="number" name="high_blood_pressure" id="high_blood_pressure" required><br><br>
+        <label for="platelets">Platelets:</label>
+        <input type="number" name="platelets" id="platelets" required><br><br>
+        <label for="serum_creatinine">Serum Creatinine:</label>
+        <input type="number" name="serum_creatinine" id="serum_creatinine" required><br><br>
+        <label for="serum_sodium">Serum Sodium:</label>
+        <input type="number" name="serum_sodium" id="serum_sodium" required><br><br>
+        <label for="sex">Sex (0 for female, 1 for male):</label>
+        <input type="number" name="sex" id="sex" required><br><br>
+        <label for="smoking">Smoking (0 or 1):</label>
+        <input type="number" name="smoking" id="smoking" required><br><br>
+        <label for="time">Follow-up period:</label>
+        <input type="number" name="time" id="time" required><br><br>
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>
